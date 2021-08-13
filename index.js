@@ -2,7 +2,13 @@
 //  array of multiples of number until the array length reaches length.
 
 function arrayOfMultiples (num, length) {
-	
+    let count = 1
+    let multiples = []
+    while (count < (length + 1) ) {
+        multiples.push(num * count)
+        count++;
+    }
+	return multiples
 }
 
 console.log(arrayOfMultiples(7, 5), [7, 14, 21, 28, 35])
